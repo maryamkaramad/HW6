@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobe Portfolio | Build your own personalized website</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script
+      src="https://kit.fontawesome.com/d8b16f7d29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+    </button>
+    <div class="grid-container">
+      <div class="side">
+        <h1>preserve-whitespace</h1>
+        <a class="color" href="">work</a>
+        <a href="">Kleur & Theorie - Book Design</a>
+        <a href="">Logos & Marks - Logofolio</a>
+        <a href="">The Merry Moore - Branding</a>
+        <a href="">Aliza Levi Interiors - Branding</a>
+        <a href="">Masterly - The Dutch in Milano</a>
+        <a href="">Louie Coffee - Branding</a>
+        <a href="">Dogwood - Branding</a>
+        <a href="">Loavies Newsletter Design</a>
+        <h2 class="color">Contact</h2>
+        <div class="social">
+          <i class="fa fa-behance" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="header">
+        <h2 class="text_align margin">
+          My name is Rose van der Ende and I'm a passionate graphic designer.
+          Within my<br />
+          designs I value simplicity, symmetry and detail. Whether I'm designing
+          books,<br />
+          branding, packaging or websites I always strive for beauty and
+          balance.
+        </h2>
+        <p class="text_align">Scroll down to see my work</p>
+      </div>
+      <div class="gallery_1">
+        <img class="img" src="/1.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Kleur & Theorie - Book Design</p>
+        </div>
+      </div>
+      <div class="gallery_2">
+        <img class="img" src="/2.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Logos & Marks - Logofolio</p>
+        </div>
+      </div>
+      <div class="gallery_3">
+        <img class="img" src="/3.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>The Merry Moore - Branding</p>
+        </div>
+      </div>
+
+      <div class="gallery_4">
+        <img class="img" src="/4.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Aliza Levi Interiors - Branding</p>
+        </div>
+      </div>
+      <div class="gallery_5">
+        <img class="img" src="/5.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Masterly - The Dutch in Milano</p>
+        </div>
+      </div>
+      <div class="gallery_6">
+        <img class="img" src="/6.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Loavies Newsletter Design</p>
+        </div>
+      </div>
+      <div class="gallery_7">
+        <img class="img" src="/7.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Dogwood - Branding</p>
+        </div>
+      </div>
+      <div class="gallery_8">
+        <img class="img" src="/8.jpg" alt="" />
+        <div class="overlay">
+          <p>2018</p>
+          <p>Loavies Newsletter Design</p>
+        </div>
+      </div>
+      <div class="fooder">
+        <div class="social">
+          <i class="fa fa-behance" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>
+        <p>Powered by <a href="http://">Adobe Portfolio </a></p>
+      </div>
+    </div>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
